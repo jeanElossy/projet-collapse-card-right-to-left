@@ -1,0 +1,120 @@
+:root{
+  --color--body: #f2f2f2;
+  --color--container: #f1f1f1;
+  --color--card: #f01255;
+  --color--button: red;
+}
+@import url('https://fonts.googleapis.com/css2?family=Georama:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Georama:wght@200&display=swap');
+
+*, *::before, *::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: var(--color--body);
+  font-family: 'Georama', sans-serif;
+}
+.container{
+  display: flex;
+  background: var(--color--container);
+  box-shadow: 0px 0px 7px rgb(102, 100, 100);
+  height: 350px;
+  width: 550px;
+  border-radius: 7px;
+}
+
+
+/*--------------------------RIGHT------------------------------*/
+.conatiner__content__left{
+  width: 50%;
+  background: var(--color--container);
+  border-radius: 7px 0 0 7px;
+}
+.content__left{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.content__title__left h2{
+  margin: 30px 0 20px;
+}
+.icons{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 5px;
+}
+.fab{
+  cursor: pointer;
+}
+
+input[type="email"], input[type="password"]{
+  width: 250px;
+  padding: 0.7rem;
+  margin: 5px auto;
+  background: rgba(201, 197, 197, 0.432);
+  outline: none;
+  border: none;
+}
+
+.coordonnee, a{
+  font-size: 1rem;
+  font-family: 'Caveat', cursive;
+  text-decoration: none;
+  color: black;
+}
+.mdp__forget{
+  text-decoration: underline;
+}
+button{
+  margin-top: 10px;
+  background: var(--color--button);
+  border: 1px solid var(--color--button);
+  outline: none;
+  padding: 0.8rem 2.5rem;
+  border-radius: 30px;
+  color: var(--color--container);
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/*--------------------------LEFT------------------------------*/
+
+.container__content__right{
+  width: 50%;
+  background: var(--color--card);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; 
+  color: white;
+  border-radius: 0 7px 7px 0;
+}
+
+.container__content__right p{
+  font-family: 'Caveat', cursive;
+  margin-top: 15px;
+  font-size: 1.1rem;
+}
+.btn__right{
+  border: 1px solid white;
+  width: 150px;
+  margin: 20px auto;
+  padding: .8rem;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  transition: .3s ease-in-out;
+  cursor: pointer;
+}
+.btn__right:hover{
+  background: var(--color--container);
+  color: var(--color--card);
+
+}
