@@ -15,6 +15,7 @@
       <div class="content__left">
         <div class="content__title__left">
           <h2>Sign In</h2>
+          <h2 class="create">Create Account</h2>
         </div>
         <div class="icons">
           <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -22,14 +23,21 @@
           <a href="#"><i class="fab fa-linkedin-in"></i></a>
         </div>
         <div class="my__form">
+          <div class="information">
+            <span class="coordonnee">Entrez vos coordonnées</span>
+            <span class="inscription">Inscription</span>
+          </div>
           <form action="/">
-            <span class="coordonnee">Entrez vos coordonnées</span><br />
             <input type="email" name="email" id="email" placeholder="Email" required> <br />
             <input type="password" name="password" id="password" placeholder="Mot de passe" required><br />
             <div class="mdp__forget">
-              <a href="#">Mot de passe oublié</a><br />
+              <a href="#">Mot de passe oublié</a>
+              <input type="text" name="pseudo" id="pseudo" placeholder="Pseudo" class="pseudo" required>
             </div>
-            <button>Se connecter</button>
+            <div class="button">
+              <button>Se connecter</button>
+              <button class="inscrire">S'inscrire</button>
+            </div>
           </form>
         </div>
       </div>
@@ -37,7 +45,8 @@
     <div class="container__content__right">
       <div class="content__right">
         <div class="content__title__right">
-          <h1>Hello, friend!</h1>
+          <h2>Hello, friend!</h2>
+          <h2 class="welcome">Welcome Back!</h2>
         </div>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, ad.</p>
         <div class="btn__right">

@@ -2,10 +2,8 @@
   --color--body: #f2f2f2;
   --color--container: #f1f1f1;
   --color--card: #f01255;
-  --color--button: red;
 }
-@import url('https://fonts.googleapis.com/css2?family=Georama:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Georama:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
 
 *, *::before, *::after{
   margin: 0;
@@ -19,7 +17,7 @@ body{
   align-items: center;
   height: 100vh;
   background: var(--color--body);
-  font-family: 'Georama', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 .container{
   display: flex;
@@ -29,7 +27,6 @@ body{
   width: 550px;
   border-radius: 7px;
 }
-
 
 /*--------------------------RIGHT------------------------------*/
 .conatiner__content__left{
@@ -54,6 +51,7 @@ body{
 }
 .fab{
   cursor: pointer;
+  font-size: 1.3em;
 }
 
 input[type="email"], input[type="password"], input[type="text"]{
@@ -65,14 +63,14 @@ input[type="email"], input[type="password"], input[type="text"]{
   border: none;
 }
 
-.coordonnee, a{
-  font-size: 1rem;
-  font-family: 'Caveat', cursive;
+.coordonnee, a, .inscription{
+  font-size: 0.8rem;
   text-decoration: none;
   color: black;
 }
-.mdp__forget{
+.mdp__forget a{
   text-decoration: underline;
+  margin: 5px;
 }
 button{
   margin-top: 10px;
@@ -102,10 +100,10 @@ button{
 }
 
 .container__content__right p{
-  font-family: 'Caveat', cursive;
   margin-top: 15px;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
+
 .btn__right{
   border: 1px solid white;
   width: 150px;
@@ -119,19 +117,32 @@ button{
 .btn__right:hover{
   background: var(--color--container);
   color: var(--color--card);
-
 }
-/* .content__title__right{
-  transition: 1s ease-in-out;
-} */
+
 /*-----------------------------------*/
 
-
-.collapse__l{
+.collapse__left{
   transform: translateX(-100%);
   border-radius: 7px 0 0 7px;
 }
-.collapse__r{
+.collapse__right{
   transform: translateX(100%);
   border-radius: 0 7px 7px 0;
+}
+
+.add{
+  display: none;
+}
+.welcome, .create, .inscription, .pseudo, .inscrire{
+  display: none;
+}
+.replace{
+  display: initial; 
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.visible{
+  display: initial; 
 }
